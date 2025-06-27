@@ -5,15 +5,14 @@
     <title>To do List</title>
     <link rel="stylesheet" th:href="@{/styles.css}" />
 </head>
-<body>
 <div class="container">
-<h1>To Do List</h1>
+    <h1>To Do List</h1>
 
-<form th:action="@{/todos}" method="post">
-    <input type="text" name="task" placeholder="Enter a new task" required  />
-    <button type="submit">투두 추가</button>
+    <form th:action="@{/todos}" method="post">
+        <input type="text" name="task" placeholder="Enter a new task" required  />
+        <button type="submit">투두 추가</button>
 
-</form>
+    </form>
 
     <div class="todo-list">
         <ul>
